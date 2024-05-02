@@ -1,0 +1,290 @@
+input[type=checkbox] {
+Accent-color:orange;
+}
+
+input[type=radio] {
+	accent-color: green;
+}
+
+input[type=range] {
+accent-color:yellow;
+}
+
+progress {
+				accent-color: red;}
+
+#main {width:60px;
+height: 300px;
+ border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+align-content:center;}
+
+ #main div {width: 70px;
+ 	height:70px;}
+
+#main1 {width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: flex-start;}
+
+  #main1 div {flex: 10;}
+  #mybluediv {align-self: center;}
+
+#main4 {
+  font-size: small;
+  color: lightcoral;
+}
+#ex1 {background-color: yellow;
+color: red;}
+#ex2 {background-color: red;
+color: green;
+all: inherit;}
+#ex3 {background-color: yellow;
+color: green;
+all: inherit;}
+#ex4 {background-color: blue;
+color: green;
+all: inherit;}
+
+.ani {width: 200px;
+height: 200px;
+background: green;
+position: relative;
+animation:  mymove ;
+animation-delay: 2s;
+animation-direction: inherit;
+animation-duration: 2s;
+animation-fill-mode:initial;
+animation-iteration-count: infinite;
+animation-name: mymove;
+animation-play-state: running;
+animation-timing-function: linear;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+#h {background-color: red;
+  width: 100px;
+  height: 50px;
+  aspect-ratio: 5/3;
+}
+
+.background {
+  background: lightblue url(https://cdn.pixabay.com/photo/2019/06/02/19/11/clematis-4247203_1280.jpg) no-repeat center;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+}
+
+.transbox {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 20px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+#div3 { position: relative;
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: visible;
+}
+
+#bg { 
+  background: lightgreen;
+  background-attachment: scroll; 
+}
+
+#myDIV { 
+  height: 400px;
+  background-repeat: no-repeat , repeat;
+  background-image: url(https://cdn.pixabay.com/photo/2019/06/02/19/11/clematis-4247203_1280.jpg), url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg);
+  background-blend-mode: color-dodge;
+   background-clip: content-box; background-size: cover;
+}
+ 
+
+#example1 { border: 10px dotted black;
+	padding: 15px;
+	background: lightblue;
+	background-clip: border-box;
+}
+
+#example2 { border: 10px dotted black;
+	padding: 15px;
+	background: lightblue;
+	background-clip: padding-box;
+}
+
+#example3 { border: 10px dotted black;
+	padding: 15px;
+	background: lightblue;
+	background-clip: content-box;
+}
+#bgc {background-color: coral;}
+
+.bgi {width: 400px; height: 200px;
+  background-color: #cccccc;
+  background-image: repeating-linear-gradient(red, yellow 10%, green 20%);}
+
+#ex1 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg);
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+
+#ex2 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg);
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+#ex3 {
+  border: 10px dashed black;
+  padding: 25px;
+  background: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+#bgp { background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right center;}
+#bgx { 
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: solid black 1px;
+  background-image: url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg);
+  background-repeat: no-repeat;
+  background-position-x: center bottom; background-size: cover;
+}
+#bgy { 
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  border: solid black 1px;
+  background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-repeat:  round;
+  background-position-y:top;
+
+}
+#bs {background-color: lightgreen;
+  border:  3px solid blue;
+  width: 125px;
+  block-size: auto;}
+
+#bbc {background-color: lightgreen; border-block-width: 10px;
+ border-block-style: solid;
+	border-block-color: pink lightblue;}
+
+.intro {background-color: greenyellow;}
+
+p.hometown {background-color: orange;}
+
+.v1 h1 {color:red;}
+
+div + p {background-color: orangered;}
+
+p ~ ul {
+  background: #ff0000;
+}
+a[ target="_blank" ] {background: greenyellow;}
+
+[title~="klematis"] 
+{border: 6px solid black;}
+
+[title~="paper"] {
+  border: 5px solid yellow;
+}
+[lang|="en"] {
+  background: yellow;
+}
+[lang|="en-us"] {background: red;}
+
+div[class*="test"]
+{background-color: blue;}
+
+ <style>
+p:active {
+  background-color: yellow;
+}
+
+
+a.ex3:hover, a.ex3:active {background: red;}
+a.ex4:hover, a.ex4:active {font-family: monospace;}
+a.ex5:hover, a.ex5:active {text-decoration: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
